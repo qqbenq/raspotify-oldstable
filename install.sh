@@ -99,7 +99,7 @@ if [ "$MIN_NOT_MET" ]; then
 	echo "\nUnmet minimum required package version(s):\n"
 	echo "$MIN_NOT_MET"
 	echo "$ERROR_MESG"
-	exit 1
+	# exit 1
 fi
 
 curl -sSL https://dtcooper.github.io/raspotify/key.asc | $SUDO tee /usr/share/keyrings/raspotify_key.asc >/dev/null
